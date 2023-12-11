@@ -17,7 +17,7 @@ function App() {
 />
 
 <IdCard
-  lastName='Delores '
+  lastName='Delores'
   firstName='Obrien'
   gender='female'
   height={172}
@@ -27,6 +27,8 @@ function App() {
 
 <Greetings lang="de">Ludwig</Greetings>
 <Greetings lang="fr">François</Greetings>
+<Greetings lang="es">Pedro</Greetings>
+<Greetings lang="rs">Dmitri</Greetings>
 
 <Random min={1} max={6}/>
 <Random min={1} max={100}/>

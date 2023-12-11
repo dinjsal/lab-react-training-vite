@@ -1,18 +1,17 @@
 import React from 'react'
 
 function Greetings({lang, children}) {
-    switch (lang) {
-        case 'de':
-          return "Hallo";
-        case 'fr':
-          return 'Bonjour';
-        case 'en':
-          return 'Hello';
-        case 'es':
-          return 'Hola';
-        default:
-          return <div>Language not available</div>;
-      }
+    if (lang === "de") {
+        return <p>Hallo {children}</p>;
+    } else if (lang === "fr") {
+        return <p>Bonjour {children}</p>;
+    } else if (lang === "es") {
+        return <p>Hola {children}</p>;
+    } else if (lang === "en"){
+        return <p>Hello {children}</p>;
+    } else {
+        return 'Language not available'
+    }
 }
 
 export default Greetings
