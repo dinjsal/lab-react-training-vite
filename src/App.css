@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+span {
+  font-weight: bold;
+}
+
+.id-card {
+  display: flex;
+  flex-direction: row;
+  line-height: 0.4;
+  text-align: left;
+  border: 1px solid black;
+  width: 50%;
+  margin: 50px 30px;
+  box-shadow: 4px 3px 3px grey;
+}
+
+img {
+  height: 160px;
+  margin: 5px 8px 5px;
+}
