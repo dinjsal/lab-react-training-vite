@@ -3,14 +3,14 @@ import visaLogo from '/src/assets/images/visa.png'
 import mastercardLogo from '/src/assets/images/mastercard.png'
 
 function CreditCard({type, number, expirationMonth, expirationYear, bank, owner, bgColor, color}) {
-    // const divStyle = {
-    //     color: {color},
-    //     backgroundColor: {bgColor},
-    //   };
+    const divStyle = {
+        color: color.toString(),
+        backgroundColor: bgColor.toString(),
+      };
     const str = '•';
     
   return (
-    <div className="credit-card" style={{backgroundColor : "#11aa99", color: 'white'}}>
+    <div className="credit-card" style={divStyle}>
         <section className="credit-card1">
         <p>{type && (type==="Visa") ? (
               <img
